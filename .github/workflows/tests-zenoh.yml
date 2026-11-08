@@ -13,6 +13,7 @@ jobs:
   build-zenoh:
     name: build & test (zenoh feature)
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
